@@ -3,7 +3,7 @@
 
 int alertFailureCount = 0;
 
-check_celcius_range(float celcius)
+int check_celcius_range(float celcius)
 {
     if(celcius >= 0.0)
         return 200;
