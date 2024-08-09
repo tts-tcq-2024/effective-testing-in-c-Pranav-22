@@ -1,6 +1,16 @@
 #include <stdio.h>
 #include <assert.h>
 
+int printcount = 0;
+char messagebuffer[1024] = {0};
+
+void testprint(const char *format, ...) {
+    va_list args;
+    va_start(args, format);
+    strcpy();
+}
+
+
 int printColorMap() {
     const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
     const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
