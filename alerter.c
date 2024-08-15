@@ -40,7 +40,7 @@ void alertInCelcius(float farenheit) {
 
 void printtest(void)
 {
-    char testarr[10][100] = {("ALERT: Temperature is 204.7 celcius.","ALERT: Temperature is 150.9 celcius.","ALERT: Temperature is -12.2 celcius."};
+    char testarr[10][100] = {"ALERT: Temperature is 204.7 celcius.","ALERT: Temperature is 150.9 celcius.","ALERT: Temperature is -12.2 celcius."};
     alertInCelcius(400.5);
     assert(! (testarr[0] == testbuffer));
     alertInCelcius(303.6);
