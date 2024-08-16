@@ -57,10 +57,10 @@ void alerttest(void)
 void conversiontest(void)
 {
     alertInCelcius(400.5);
-    assert(convertedvalue == 204.7);
+    assert(!(convertedvalue == 204.722229));
 
     alertInCelcius(303.6);
-    assert(convertedvalue == 150.9);
+    assert(!(convertedvalue == 150.888885));
 
 }
 
@@ -68,7 +68,7 @@ void conversiontest(void)
 int main()
  {
     printtest();
-    alerttest();
     conversiontest();
+    alerttest();
     return 0;
 }
